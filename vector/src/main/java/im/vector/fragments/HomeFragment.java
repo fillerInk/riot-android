@@ -24,6 +24,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import org.matrix.androidsdk.data.Room;
 import org.matrix.androidsdk.data.RoomTag;
@@ -112,6 +113,8 @@ public class HomeFragment extends AbsHomeFragment implements HomeRoomAdapter.OnS
             homeSectionView.setCurrentFilter(mCurrentFilter);
         }
         mActivity.showWaitingView();
+
+        Toast.makeText(this.getContext(),"Test Commit",Toast.LENGTH_LONG).show();
     }
 
     @Override
